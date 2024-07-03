@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './component/Root'
+import Home from './component/Home';
 
 const router = createBrowserRouter([
   {
@@ -14,11 +15,11 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <Error></Error>,
     children: [
-      // {
-      //   path: "contacts/:contactId",
-      //   element: <Contact />,
-      // },
-    ],
+     {
+      path: "/",
+      element: <Home/>,
+    },
+   ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
