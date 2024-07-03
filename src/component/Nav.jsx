@@ -20,7 +20,7 @@ const Nav = () => {
 
 
     return (
-        <div className="navbar mx-auto bg-base-100 fixed z-20 px-10">
+        <div className="navbar mx-auto  fixed opacity-60 z-20 px-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ const Nav = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"><span className="text-red-500">Md.</span>Zahed</a>
+                <a className="btn btn-ghost text-xl"><span className="text-red-500">Md.</span><span className="text-red-500">Zahed</span> </a>
             </div>
            
             <div className="navbar-end">
