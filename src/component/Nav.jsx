@@ -6,19 +6,21 @@ import img from '../assets/letter-z.png'
 
 const Nav = () => {
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/allspots'>All Tourists Spot</NavLink></li>
-        <li><NavLink to='/addspot'>Add Spots</NavLink></li>
-        <li><NavLink to='/mylist'>My List</NavLink></li>
-        <li><NavLink to='/user'>User Profile</NavLink></li>
-        <li><NavLink to='/usersettings'>User Settings</NavLink></li>
+    <div className="flex gap-2">
+    <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/'>Portfolio</NavLink></li>
+        <li><NavLink to='/'>Skill</NavLink></li>
+        <li><NavLink to='/'>About</NavLink></li>
+        <li><NavLink to='/'>Resume</NavLink></li>
+    </div>
+        
     </>
 
 
 
 
     return (
-        <div className="navbar mx-auto bg-base-100 fixed z-20">
+        <div className="navbar mx-auto bg-base-100 fixed z-20 px-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +33,7 @@ const Nav = () => {
                 <a className="btn btn-ghost text-xl"><span className="text-red-500">Md.</span>Zahed</a>
             </div>
            
-            <div className="navbar hidden lg:flex">
+            <div className="navbar-end">
             <ul className="menu menu-horizontal px-1">
                     {links}
                 </ul>
