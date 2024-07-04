@@ -1,11 +1,10 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload, FaCheck } from "react-icons/fa";
 import img from '../assets/img.png'
 import 'animate.css';
 
-
 const Banner = () => {
-   
-   
+
+
     return (
         <div className="px-6">
             <h1 className="text-white">.</h1>
@@ -18,7 +17,7 @@ const Banner = () => {
                     </h1>
 
                     <div className="text-xl font-bold text-red-500 py-4">
-                       
+
                         Web Developer  || React Developer || Programmer</div>
                     <p className="mt-5 w-75 text-xl">
                         I am an enthusiastic JavaScript developer with knowing some
@@ -30,9 +29,12 @@ const Banner = () => {
                         <a href="https://www.linkedin.com/in/abu-zahed-97b39130a/"><FaLinkedin></FaLinkedin></a>
 
                     </div>
-                    <div className=" flex gap-4 mx-auto">
-                        <button className="btn btn-outline bg-blue-900 text-xl font-bold ">Hire me</button>
-                        <button className="btn btn-outline bg-blue-900 text-xl font-bold">Download Resume</button>
+                    <div className=" flex gap-4 mx-auto justify-center">
+                        <button className="btn btn-outline text-gray-100 bg-green-600  text-xl font-bold "><FaCheck></FaCheck> Hire me</button>
+                        <a href='/CV.txt' download="CV.txt">
+                        <button className="btn btn-outline text-gray-100 bg-green-600  text-xl font-bold"><FaDownload></FaDownload> Resume</button>
+                        </a>
+                        
                     </div>
                 </div>
                 <div className="my-auto animate__animated animate__fadeInLeft" >

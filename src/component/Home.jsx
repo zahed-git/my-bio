@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Banner from "./Banner";
 import Service from "./Service";
 import MyRecent from "./MyRecent";
+import Contact from "./Contact";
 
 const Home = () => {
     return (
@@ -18,6 +19,9 @@ const Home = () => {
             </div>
             <div className="my-24">
                 <MyRecent></MyRecent>
+            </div>
+            <div className="my-24">
+                <Contact></Contact>
             </div>
             <Footer></Footer>
         </div>
