@@ -31,7 +31,7 @@ const Banner = () => {
                     </div>
                     <div className=" flex gap-4 mx-auto justify-center">
                         <button className="btn btn-outline text-gray-100 bg-green-600  text-xl font-bold "><FaCheck></FaCheck> Hire me</button>
-                        <a href='/CV.txt' download="CV.txt">
+                        <a href='https://drive.google.com/file/d/1uBeP_T_qPNsUflAoSdIYbb3HXOnqpTFY/view?usp=drive_link' download="CV.txt">
                         <button className="btn btn-outline text-gray-100 bg-green-600  text-xl font-bold"><FaDownload></FaDownload> Resume</button>
                         </a>
                         
